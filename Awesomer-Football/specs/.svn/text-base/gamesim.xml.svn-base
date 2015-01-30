@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE spec SYSTEM "http://www.cs.stolaf.edu/lib/SpecML/SpecML.dtd">
+<?xml-stylesheet
+   href="http://www.cs.stolaf.edu/lib/SpecML/SpecMLToHTML.xsl"
+   type="text/xsl"?>
+
+<spec>
+<title>The Gamesim Class Specification</title>
+<header>This class controls the simulation of an NFL game</header>
+<credits>Ryan Abdella. XML version of specification written by Ryan Abdella, Wednesday, November 30, 2011</credits>
+
+<class name="gamesim">
+
+<nosuperclass/>
+
+<variables>
+<var name="gametime" type="float">The time left in the current quarter.</var>
+<var name="poss" type="team *">Points to the team that is on offense.</var>
+<var name="notposs" type="team *">Points to the team that is on defense.</var>
+<var name="initposs" type="team *">Points to the team that received to start the game.</var>
+<var name="togo" type="int">Yardage until goalline.</var>
+<var name="down" type="int">The current down.</var>
+<var name="tofirst" type="int">Yardage until a first down.</var>
+<var name="qtr" type="int">The current quarter.</var>
+<var name="position" type="int">The postion on the field from 0 to 100.</var>
+<var name="event1" type="string">Most recent play.</var>
+<var name="event2" type="string">Second most recent play.</var>
+<var name="event3" type="string">Third most recent play.</var>
+<var name="event4" type="string">Fourth most recent play.</var>
+<var name="event5" type="string">Fifth most recent play.</var>
+<var name="event" type="string">Temp string for constructing output.</var>
+<var name="home" type="team">The home team.</var>
+<var name="away" type="away">The away team.</var>
+<var name="playtype" type="ptype">The current play type.</var>
+<var name="yardage" type="int">The length of the current play.</var>
+<var name="fumble" type="bool">Used to determine if a fumble occured.</var>
+<var name="interception" type="bool">Used to determine if an interception occured.</var>
+<var name="sack" type="bool">Used to determine if a sack occured.</var>
+<var name="complete" type="bool">Used to determine if a pass was complete.</var>
+<var name="fg" type="bool">Used to determine if a field goal was good.</var>
+<var name="touchback" type="bool">Used to determine if a punt of kickoff was a touchback.</var>
+<var name="xp" type = "bool">Used to determine if an extra point was good.</var>
+<var name="td" type = "bool">Used to determine if a touchdown occurred.</var>
+<var name="returnlength" type="int">The length of the punt return.</var>
+<var name="puntlength" type="int">The length of the punt.</var>
+</variables>
+
+<constructors-list>
+
+<constructor>
+<desc>Default Constructor.</desc>
+<noarguments />
+<statechange>This instance of gamesim is initialized by assigning everything the regular constructor does except for the teams.</statechange>
+</constructor>
+
+<constructor>
+<desc>Regular Constructor.</desc>
+<arguments>
+<arg name="t1" type="team">The home team.</arg>
+<arg name="t2" type="team">The away team.</arg>
+</arguments>
+<statechange>This instance of gamesim sets all bools to false, all strings to "", the playtype to kickoff, yardage to 0, gametime to 900, qtr to 1, down to 1, tofirst to 10 and togo to 100.</statechange>
+</constructor>
+
+</constructors-list>
+
+<destructor>
+<desc></desc>
+<statechange></statechange>
+</destructor>
+
+<methods-list>
+
+<method name="simdown" returntype="void">
+<desc>This method will simulate one play.</desc>
+<noarguments />
+<statechange>Updates the state variables to reflect the outcome of the play.</statechange>
+<return>None.</return>
+</method>
+
+<method name="gameTime" returntype="void">
+<desc>This method will determine the amount of time a play took.</desc>
+<noarguments />
+<statechange>Subtracts the time for the given play from the time left in the quarter.  If a quarter ends, changes the necessary state variables for the next quarter.</statechange>
+<return>None.</return>
+</method>
+
+<method name="updateYardage" returntype="void">
+<desc>This method updates the various state variables that have to do with field position.</desc>
+<noarguments />
+<statechange>State variables that have to do with field position are updated after a play is run.</statechange>
+<return>None.</return>
+</method>
+
+<method name="cpuPlayType" returntype="ptype">
+<desc>Determines what type of play the cpu would run in a given situation.</desc>
+<noarguments />
+<statechange>None.</statechange>
+<return>New playtype.</return>
+</method>
+
+<method name="changePoss" returntype="void">
+<desc>Changes the pointers poss and notposs to the other team.</desc>
+<noarguments />
+<statechange>Teams that poss and notposs point to are switched.</statechange>
+<return>None.</return>
+</method>
+
+<method name="kickoff" returntype="void">
+<desc>Simulates a kickoff.</desc>
+<noarguments />
+<statechange>Changes yardage to reflect the result of the kickoff.</statechange>
+<return>None.</return>
+</method>
+
+<method name="runPlay" returntype="void">
+<desc>Simulates a rushing play.</desc>
+<noarguments />
+<statechange>Changes yardage and fumble to reflect the result of the play.</statechange>
+<return>None.</return>
+</method>
+
+<method name="passPlay" returntype="void">
+<desc>Simulates a passing play.</desc>
+<noarguments />
+<statechange>Changes yardage, fumble, sack, and interception to reflect the result of the play.</statechange>
+<return>None.</return>
+</method>
+
+<method name="punt" returntype="void">
+<desc>Simulates a punt play.</desc>
+<noarguments />
+<statechange>Changes yardage, puntlength, and returnlength to reflect the result of the play.</statechange>
+<return>None.</return>
+</method>
+
+<method name="fieldgoal" returntype="void">
+<desc>Simulates a field goal.</desc>
+<noarguments />
+<statechange>Changes yardage and fg to reflect hte result of the play.</statechange>
+<return>None.</return>
+</method>
+
+<method name="extrapoint" returntype="void">
+<desc>Simulates an extra point.</desc>
+<noarguments />
+<statechange>Changes xp and the team with possessions score to reflect the result of the play.</statechange>
+<return>None.</return>
+</method>
+
+<method name="setTeams" returntype="void">
+<desc>Sets the pointers to the teams used for the simulation.</desc>
+<arguments>
+<arg name="t1" type="team *">A pointer to a team.</arg>
+<arg name="t2" type="team *">A pointer to a team.</arg>
+</arguments>
+<statechange>Changes where the pointers home and away point to.</statechange>
+<return>None.</return>
+</method>
+
+<method name="updateOutput" returntype="void">
+<desc>Updates the strings that detail the previous plays.</desc>
+<noarguments />
+<statechange>Changes the event strings.</statechange>
+<return>None.</return>
+</method>
+
+<method name="getcomppercent" returntype="float">
+<desc>Averages the quarterback, receiver, and defense to get a real completion percent.</desc>
+<arguments>
+<arg name="p" type="player *">A pointer to the receiver.</arg>
+</arguments>
+<statechange>None.</statechange>
+<return>A decimal representing a completion percentage.</return>
+</method>
+
+<method name="getypcatch" returntype="float">
+<desc>Average the quarterback, receiver, and defense to get an accurate yards per catch.</desc>
+<arguments>
+<arg name="p" type="player *">A pointer to the receiver.</arg>
+</arguments>
+<statechange>None.</statechange>
+<return>A number representing an average yards per catch.</return>
+</method>
+
+<method name="getinterrate" returntype="float">
+<desc>Averages the quarterback and defense to get a real interception rate.</desc>
+<noarguments />
+<statechange>None.</statechange>
+<return>A decimal representing an interception rate.</return>
+</method>
+
+<method name="getsackrate" returntype="float">
+<desc>Averages the quarterback and defense to get a real sack rate.</desc>
+<noarguments />
+<statechange>None.</statechange>
+<return>A decimal representing a sack rate.</return>
+</method>
+
+<method name="getypr" returntype="float">
+<desc>Averages the runningback and defense to get an accurate yards per rush.</desc>
+<arguments>
+<arg name="p" type="player *">A pointer to the runningback.</arg>
+</arguments>
+<statechange>None.</statechange>
+<return>A number representing an average yards per rush.</return>
+</method>
+
+<method name="getfumbrate" returntype="float">
+<desc>Averages the player and defense to get a real fumble rate.</desc>
+<arguments>
+<arg name="p" type="player *">A pointer to the player.</arg>
+</arguments>
+<statechange>None.</statechange>
+<return>A decimal representing a fumble rate.</return>
+</method>
+
+<method name="start" returntype="void">
+<desc>Starts a game simulation.</desc>
+<noarguments />
+<statechange>Changes the state variables associated with yardage and possession to values used in the beginning of the game.</statechange>
+<return>None.</return>
+</method>
+
+</methods-list>
+
+</class>
+
+</spec>

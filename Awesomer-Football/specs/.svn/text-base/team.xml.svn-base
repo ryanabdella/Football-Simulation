@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE spec SYSTEM "http://www.cs.stolaf.edu/lib/SpecML/SpecML.dtd">
+<?xml-stylesheet
+   href="http://www.cs.stolaf.edu/lib/SpecML/SpecMLToHTML.xsl"
+   type="text/xsl"?>
+
+<spec>
+<title>The Team Class Specification</title>
+<header>This class models a team.</header>
+<credits>Ryan Abdella. XML version of specification written by Ryan Abdella, Sunday, December 11, 2011</credits>
+
+<class name="team">
+
+<nosuperclass/>
+
+<variables>
+<var name="name" type="string">The teams name.</var>
+<var name="parr" type="player * array">An array with pointers to the players on the team.</var>
+<var name="defense" type="defstat">Contains the defensive stats for the team.</var>
+<var name="poss" type="bool">Indicates if the team has the ball.</var>
+<var name="score" type="int">The teams score.</var>
+</variables>
+
+<constructors-list>
+
+<constructor>
+<desc>The default constructor.</desc>
+<noarguments />
+<statechange>None.</statechange>
+</constructor>
+
+<constructor>
+<desc>The regular constructor.</desc>
+<arguments>
+<arg name="is" type="ifstream">A reference to an ifstream.</arg>
+</arguments>
+<statechange>Calls defstat constructor, sets team name, possession to false, score to 0, and initializes the players in the player array.</statechange>
+</constructor>
+
+</constructors-list>
+
+<destructor>
+<desc>The default destructor.</desc>
+<statechange>Deallocates the players.</statechange>
+</destructor>
+
+<methods-list>
+
+<method name="tartotal" returntype="float">
+<desc>Determines to total targets per game for all the players on the team.</desc>
+<noarguments />
+<statechange>None.</statechange>
+<return>Total targets per game of all players on the team.</return>
+</method>
+
+<method name="rate" returntype="float">
+<desc>Calculates the rate of passing plays to total plays.</desc>
+<noarguments />
+<statechange>None.</statechange>
+<return>A decimal that reflects how often the team passes the ball.</return>
+</method>
+
+<method name="detplayer" returntype="player *">
+<desc>Determines which receiver is the intended receiver on a passing down.</desc>
+<noarguments />
+<statechange>None.</statechange>
+<return>A pointer to the intended receiver.</return>
+</method>
+
+</methods-list>
+
+</class>
+
+</spec>

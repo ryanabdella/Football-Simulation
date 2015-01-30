@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE spec SYSTEM "http://www.cs.stolaf.edu/lib/SpecML/SpecML.dtd">
+<?xml-stylesheet
+   href="http://www.cs.stolaf.edu/lib/SpecML/SpecMLToHTML.xsl"
+   type="text/xsl"?>
+
+<spec>
+  <title>The Player Specification</title>
+<header>This class models a player, a professional football player</header>
+<credits>XML version of specification written by Soren Knutson, Sunday, December 11, 2011</credits>
+
+<class name="Player">
+
+<nosuperclass/>
+
+<variables>
+<var name="name" type="string">The name of the player.</var>
+<var name="position" type="string">What position the player plays as.</var>
+<var name="output" type="string">A string of stats that will be displayed when the player's team is highlighted.</var>
+<var name="games" type="float">The number of games the player has played.</var>
+<var name="comp" type="float">The number of completions the player has made.</var>
+<var name="att" type="float">The number of passing attempts the player has made.</var>
+<var name="pyds" type="float">The number of passing yards the player has.</var>
+<var name="inter" type="float">The number of interceptions the player has thrown.</var>
+<var name="sack" type="float">The number of times the play has been sacked</var>
+<var name="rush" type="float">The number of rushing attempts a player has made.</var>
+<var name="ruyds" type="float">The number of yards a player has rushed.</var>
+<var name="tar" type="float">The number of times the player has been passed to.</var>
+<var name="cat" type="float">The number of catches the player has made.</var>
+<var name="reyds" type="float">The number of receiving yards the player has.</var>
+<var name="fumb" type="float">The number of times the player has fumbled the ball.</var>
+<var name="fg20a" type="float">The number of field goal attempts at 20-30 yrds </var>
+<var name="fg20m" type="float">The number of field goals made from 20-30 yards.</var>
+<var name="fg30a" type="float">The number of field goal attempts at 30-40 yards.</var>
+<var name="fg30m" type="float">The number of field goals made from 30-40 yards.</var>
+<var name="fg40a" type="float">The number of field goal attempts at 40-50 yards.</var>
+<var name="fg40m" type="float">The number of field goals made from 40-50 yards.</var>
+<var name="fg50a" type="float">The number of field goal attempts at 50 yards and up.</var>
+<var name="fg50m" type="float">The number of field goals made from 50 yards and up. </var>
+</variables>
+
+<constructors-list>
+
+<constructor>
+<desc>Player default constructor</desc>
+<noarguments />
+<statechange> Sets all stats of the player to zero.</statechange>
+</constructor>
+
+<constructor>
+<desc>A ifstream constructor</desc>
+<arguments>
+<arg name="is" type="ifstream">A reference to an ifstream</arg>
+</arguments>
+<statechange>Initializes all the variables to their appropriate values. Also determines the players position and creates the appropriate string of stats for the output variable. This can be done by using two stringstreams and a string.</statechange>
+</constructor>
+
+</constructors-list>
+
+<destructor>
+<desc>No destructor needed</desc>
+<statechange>none</statechange>
+</destructor>
+
+<methods-list>
+
+<method name="commpercent" returntype="float">
+<desc>Returns the number of completions over the number of attempts.</desc>
+<noarguments />
+<statechange>none</statechange>
+<return>Returns the number of completions over the number of attempts.</return>
+</method>
+
+<method name="ypcomp" returntype="float">
+<desc>Yards per completion</desc>
+<noarguments />
+<statechange>none</statechange>
+<return>Returns the number of receiving yards over the number of completions.</return>
+</method>
+
+<method name="interrate" returntype="float">
+<desc>Interception rate</desc>
+<noarguments />
+<statechange>none</statechange>
+<return>Returns the then number of interceptions over the number of attempts</return>
+</method>
+
+<method name="sackrate" returntype="float">
+<desc>The percentage of time the QB is sacked</desc>
+<noarguments />
+<statechange>none</statechange>
+<return>Returns the number of sacks over the number of attempts</return>
+</method>
+
+<method name="ypr" returntype="float">
+<desc>Yards per rush</desc>
+<noarguments />
+<statechange>none</statechange>
+<return>Returns the number of rushing yards over the number of rush attempts</return>
+</method>
+
+<method name="tpg" returntype="float">
+<desc>Targets per game</desc>
+<noarguments />
+<statechange>none</statechange>
+<return>Returns the number of times the ball was thrown to a player over the number of games the player has played.</return>
+</method>
+
+<method name="catchrate" returntype="float">
+<desc>The catching percentage of a player.</desc>
+<noarguments />
+<statechange>none</statechange>
+<return>Returns the number of catches the player has made over the number of times the ball has be thrown to that player.</return>
+</method>
+
+<method name="ypcat" returntype="float">
+<desc>Yards per catch</desc>
+<noarguments />
+<statechange>none</statechange>
+<return>Returns the number of receiving yards divided by the number of catches the player has made.</return>
+</method>
+
+<method name="fumbrate" returntype="float">
+<desc>The rate at which a player fumbles the ball to the other team.</desc>
+<noarguments />
+<statechange>none</statechange>
+<return>Returns the number of fumbles a player has made over the summation of the completions of a QB, the number of rush attempts, and the number of sacks.</return>
+</method>
+
+<method name="fg20" returntype="float">
+<desc>The percentage of success a player has to make a kick at 20-30 yards.</desc>
+<noarguments />
+<statechange>none</statechange>
+<return>Returns the number of attempts at 20-30 yards over the number of times the player has made a kick at 20-30 yards.</return>
+</method>
+
+<method name="fg30" returntype="float">
+<desc>The percentage of success a player has to make a kick at 30-40 yards.</desc>
+<noarguments />
+<statechange>none</statechange>
+<return>Returns the number of attempts at 30-40 yards over the number of times the player has made a kick at 30-40 yards.</return>
+</method>
+
+<method name="fg40" returntype="float">
+<desc>The percentage of success a player has to make a kick at 40-50 yards.</desc>
+<noarguments />
+<statechange>none</statechange>
+<return>Returns the number of attempts at 40-50 yards over the number of times the player has made a kick at 40-50 yards.</return>
+</method>
+
+
+<method name="fg50" returntype="float">
+<desc>The percentage of success a player has to make a kick at 50 yards and up.</desc>
+<noarguments />
+<statechange>none</statechange>
+<return>Returns the number of attempts at 50 yards an up over the number of times the player has made a kick at 50 yards and up.</return>
+</method>
+
+
+</methods-list>
+
+</class>
+
+</spec>

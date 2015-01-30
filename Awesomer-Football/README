@@ -1,0 +1,4 @@
+type in the terminal 'make football'
+then type in 'football' to run program.
+
+when running a simulation, after a score use the continue button to kick an extra point if a touchdown was scored and continue again for the kickoff. USING ANY OTHER BUTTON WILL PRODUCE AN UNDESIRABLE RESULT!

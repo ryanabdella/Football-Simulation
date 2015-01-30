@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--
+   This document was automatically created using an XSLT stylesheet by Aubrey Barnard.
+   See www.stolaf.edu/people/barnard/xml/xml.html for additional information.
+   -->
+<html xmlns="http://www.w3.org/TR/xhtml1/strict">
+<head>
+<title>The Team Class Specification</title>
+</head>
+<body bgcolor="white">
+<div class="specification">
+<center>
+<p>
+<big>
+<big>
+<big>
+<big>The Team Class Specification</big>
+</big>
+</big>
+</big>
+</p>
+</center>
+<center>
+<p>
+<big>
+<big>
+<big>This class models a team.</big>
+</big>
+</big>
+</p>
+</center>
+<center>
+<p>Ryan Abdella. XML version of specification written by Ryan Abdella, Sunday, December 11, 2011</p>
+</center>
+<br/>
+<hr/>
+<br/>
+<br/>
+
+<dl class="class-spec">
+<p>
+<dt>
+<big>
+<strong>CLASS <code> team</code>
+</strong>
+</big>
+</dt>
+<dd>
+
+<dl class="inheritance">
+<p>
+<dt>
+<strong>No superclass.</strong>
+</dt>
+<dd/>
+</p>
+</dl>
+
+<dl class="variables">
+<p>
+<dt>
+<strong>State variables:</strong>
+</dt>
+<dd>
+<dl>
+<p>
+<dt class="var">
+<code>  string name</code>
+</dt>
+<dd>The teams name.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  player * array parr</code>
+</dt>
+<dd>An array with pointers to the players on the team.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  defstat defense</code>
+</dt>
+<dd>Contains the defensive stats for the team.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  bool poss</code>
+</dt>
+<dd>Indicates if the team has the ball.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  int score</code>
+</dt>
+<dd>The teams score.</dd>
+</p>
+</dl>
+</dd>
+</p>
+</dl>
+
+<dl class="constructors-list">
+<p>
+<dt>
+<strong>Constructors:</strong>
+</dt>
+<dd>
+<dl>
+
+<p>
+<dt class="constructor">
+<code> team</code>
+</dt>
+<dd>
+<dl>
+The default constructor.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>None.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="constructor">
+<code> team</code>
+</dt>
+<dd>
+<dl>
+The regular constructor.
+<p>
+<dt class="arguments">Arguments:</dt>
+<dd>
+<dl>
+<p>
+<dt class="arg">
+<code>ifstream is</code>
+</dt>
+<dd>A reference to an ifstream.</dd>
+</p>
+</dl>
+</dd>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>Calls defstat constructor, sets team name, possession to false, score to 0, and initializes the players in the player array.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+</dl>
+</dd>
+</p>
+</dl>
+
+<dl class="destructor">
+<p>
+<dt>
+<strong>Destructor:</strong>
+</dt>
+<dd>
+<dl>
+<dt class="destructor">
+<code> 
+      ~team</code>
+</dt>
+<dd>
+<dl>
+The default destructor.
+<p>
+<dt>State change:</dt>
+<dd>Deallocates the players.</dd>
+</p>
+</dl>
+</dd>
+</dl>
+</dd>
+</p>
+</dl>
+
+<dl class="methods-list">
+<p>
+<dt>
+<strong>Methods:</strong>
+</dt>
+<dd>
+<dl>
+
+<p>
+<dt class="method">
+<code> float tartotal</code>
+</dt>
+<dd>
+<dl>
+Determines to total targets per game for all the players on the team.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>None.</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>Total targets per game of all players on the team.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> float rate</code>
+</dt>
+<dd>
+<dl>
+Calculates the rate of passing plays to total plays.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>None.</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>A decimal that reflects how often the team passes the ball.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> player * detplayer</code>
+</dt>
+<dd>
+<dl>
+Determines which receiver is the intended receiver on a passing down.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>None.</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>A pointer to the intended receiver.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+</dl>
+</dd>
+</p>
+</dl>
+
+</dd>
+<dt>
+<hr/>
+</dt>
+<dd/>
+</p>
+</dl>
+
+</div>
+</body>
+</html>

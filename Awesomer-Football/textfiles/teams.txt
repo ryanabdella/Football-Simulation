@@ -1,0 +1,928 @@
+237 402 2752 9 24 337 1358 6 38 929 31 558 58 2598
+Arizona Cardinals
+QB
+Kevin Kolb
+19 306 512 3644 18 42 14
+RB
+Beanie Wells
+39 473 2039 36 23 242 4
+RB
+Alfonso Smith
+10 29 102 5 3 21 0
+WR
+Larry Fitzgerald
+43 427 238 3117 0
+WR
+Early Doucet
+30 151 86 1030 0
+WR
+Andre Roberts
+25 103 49 601 0
+TE
+Jeff King
+42 92 62 321 0
+TE
+Todd Heap
+35 159 106 1342 0
+K
+Jay Feely
+0 19 19 21 26 21 28 4 7
+255 415 2878 11 23 293 1080 6 20 460 26 264 55 2248
+Atlanta Falcons
+QB
+Matt Ryan
+41 866 1416 9508 33 64 13
+RB
+Michael Turner
+38 731 3190 45 28 248 6
+RB
+Jacquizz Rodgers
+11 38 168 20 14 116 0
+WR
+Roddy White
+43 457 264 3372 1
+WR
+Julio Jones
+8 51 30 498 0
+WR
+Harry Douglas
+27 104 53 722 0
+TE
+Tony Gonzalez
+43 329 212 2153 0
+TE
+Michael Palmer
+25 18 12 75 0
+K
+Matt Bryant
+0 21 21 16 17 13 18 3 4
+195 362 2209 12 38 300 1006 10 30 773 27 203 53 2478
+Baltimore Ravens
+QB
+Joe Flacco
+43 851 1399 9972 30 97 23
+RB
+Ray Rice
+43 740 3281 283 195 1795 4
+RB
+Ricky Williams
+43 466 2056 95 64 467 6
+WR
+Anquan Boldin
+42 317 196 2608 3
+WR
+Torrey Smith
+11 53 31 613 0
+WR
+Lee Evans
+33 188 84 1245 1
+TE
+Ed Dickson
+26 82 54 544 0
+TE
+Dennis Pitta
+22 38 28 264 0
+K
+Billy Cundiff
+0 24 24 21 25 16 18 1 9
+250 389 2810 16 17 333 1549 6 24 480 20 183 55 2692
+Buffalo Bills
+QB
+Ryan Fitzpatrick
+34 618 1037 6971 39 59 11
+RB
+Fred Jackson
+42 629 2923 160 116 1028 6
+RB
+CJ Spiller
+25 114 453 52 42 254 1
+WR
+Steve Johnson
+32 233 138 1705 1
+WR
+David Nelson
+26 110 76 833 0
+WR
+Donald Jones
+23 76 41 444 0
+TE
+Scott Chandler
+15 37 33 320 0
+TE
+Lee Smith
+7 0 0 0 0
+K
+Rian Lindell
+0 24 24 16 18 13 18 3 8
+218 346 2766 10 23 344 1590 6 30 762 26 163 49 2035
+Carolina Panthers
+QB
+Cam Newton
+11 239 392 3093 14 26 3
+RB
+DeAngelo Williams
+30 411 2018 72 51 406 4
+RB
+Jonathan Stewart
+41 492 2345 83 62 583 6
+WR
+Steve Smith
+40 330 170 2596 3
+WR
+Brandon LaFell
+25 112 64 859 0
+WR
+Legedu Naanee
+36 138 83 931 1
+TE
+Greg Olsen
+43 257 141 1467 2
+TE
+Jeremy Shockey
+36 172 116 1329 1
+K
+Olindo Mare
+0 25 27 23 26 17 21 1 4
+301 489 3114 16 24 269 1198 9 43 976 23 416 63 2706
+Chicago Bears
+QB
+Jay Cutler
+41 779 1301 9259 49 110 17
+RB
+Matt Forte
+43 693 2983 217 160 1508 4
+RB
+Marion Barber
+36 389 1543 55 40 288 1
+WR
+Johnny Knox
+42 233 124 2109 1
+WR
+Roy Williams
+40 182 99 1461 3
+WR
+Earl Bennett
+46 187 118 1554 0
+TE
+Kellen Davis
+43 42 22 229 0
+TE
+Matt Spaeth
+40 36 21 155 0
+K
+Robbie Gould
+0 27 27 18 19 17 26 10 12
+230 396 2524 6 31 323 1156 9 33 766 45 488 73 3239
+Cincinnati Bengals
+QB
+Andy Dalton
+11 218 363 2509 12 16 2
+RB
+Cedric Benson
+39 810 3102 76 55 342 5
+RB
+Bernard Scott
+40 213 884 33 26 142 0
+WR
+AJ Green
+10 72 44 745 0
+WR
+Jerome Simpson
+16 99 56 854 2
+WR
+Andre Caldwell
+42 181 111 1084 0
+TE
+Jermaine Gresham
+24 144 89 841 1
+TE
+Donald Lee
+37 76 56 439 1
+K
+Mike Nugent
+0 14 14 11 12 10 13 2 4
+177 313 1922 6 22 354 1525 6 32 781 27 239 56 2289
+Cleveland Browns
+QB
+Colt McCoy
+19 365 615 3908 17 49 5
+RB
+Peyton Hillis
+35 362 1507 104 82 568 6
+RB
+Mantario Hardesty
+7 75 244 19 12 113 0
+WR
+Greg Little
+11 87 47 495 0
+WR
+Josh Cribbs
+41 126 72 785 2
+WR
+Mohamed Massaquoi
+40 212 90 1365 2
+TE
+Benjamin Watson
+43 202 129 1532 0
+TE
+Evan Moore
+28 75 47 647 1
+K
+Phil Dawson
+0 18 20 18 19 12 16 7 12
+234 381 2538 14 30 259 1103 8 20 409 26 215 44 2005
+Dallas Cowboys
+QB
+Tony Romo
+33 740 1143 9114 25 61 7
+RB
+DeMarco Murray
+11 147 883 34 25 177 0
+RB
+Felix Jones
+37 369 1756 97 83 682 2
+WR
+Dez Bryant
+22 139 83 1181 1
+WR
+Miles Austin
+38 289 178 2764 1
+WR
+Laurent Robinson
+28 157 85 1055 0
+TE
+Jason Witten
+43 339 244 2745 1
+TE
+Martellus Bennett
+40 94 58 507
+K
+Dan Bailey
+0 13 14 13 14 11 14 2 3
+268 425 2942 9 33 356 1455 7 25 695 34 493 74 3547
+Denver Broncos
+QB
+Tim Tebow
+18 106 225 1506 4 22 2
+RB
+Willis McGahee
+41 371 1699 56 40 189 5
+RB
+Knowshon Moreno
+36 466 1905 104 76 686 5
+WR
+Eric Decker
+25 84 43 633 2
+WR
+Eddie Royal
+38 223 113 1118 0
+WR
+Demaryius Thomas
+16 61 29 386 1
+TE
+Daniel Fells
+41 127 78 884 3
+TE
+Dante Rosario
+39 115 63 648 0
+K
+Matt Prater
+0 21 21 20 22 15 22 5 8
+236 387 2224 15 29 289 1400 8 22 531 28 212 60 2582
+Detroit Lions
+QB
+Matthew Stafford
+24 534 916 5921 34 49 7
+RB
+Jahvid Best
+22 255 945 121 85 774 1
+RB
+Maurice Morris
+39 238 960 95 70 550 0
+WR
+Calvin Johnson
+40 382 207 3127 3
+WR
+Nate Burleson
+38 256 164 1867 5
+WR
+Titus Young
+11 52 29 376 0
+TE
+Brandon Pettigrew
+38 247 155 1530 0
+TE
+Tony Scheffler
+40 148 92 984 1
+K
+Jason Hanson
+0 14 14 17 18 13 18 8 13
+265 436 3166 22 25 238 1161 3 29 721 20 255 36 1626
+Green Bay Packers
+QB
+Aaron Rodgers
+42 922 1378 11831 22 108 13
+RB
+James Starks
+14 153 661 34 30 225 1
+RB
+Ryan Grant
+27 369 1585 42 36 286 1
+WR
+Greg Jennings
+43 319 202 3213 0
+WR
+Jordy Nelson
+40 147 111 1684 1
+WR
+James Jones
+43 181 106 1569 1
+TE
+Jermichael Finley
+29 150 112 1490 1
+TE
+Andrew Quarless
+22 36 23 267 1
+K
+Mason Crosby
+0 23 25 21 24 14 19 6 12
+204 410 2201 17 35 261 1088 6 20 522 38 409 58 2573
+Houston Texans
+QB
+Matt Schaub
+42 939 1449 11619 33 73 10
+RB
+Arian Foster
+31 574 2678 143 112 1166 3
+RB
+Ben Tate
+10 127 712 10 5 40 2
+WR
+Andre Johnson
+34 348 214 3159 0
+WR
+Jacoby Jones
+40 161 100 1386 0
+WR
+Kevin Walter
+40 186 131 1545 0
+TE
+Owen Daniels
+30 183 119 1499 0
+TE
+Joel Dreessen
+43 117 77 1091 1
+K
+Neil Rackers
+0 24 24 22 23 13 18 6 8
+266 371 2915 5 19 418 1730 5 23 411 22 67 67 3168
+Indianapolis Colts
+QB
+Peyton Manning
+32 843 1250 9200 33 26 3
+RB
+Joseph Addai
+30 400 1603 105 81 536 2
+RB
+Donald Brown
+35 283 1134 45 40 421 0
+WR
+Reggie Wayne
+43 412 258 3271 1
+WR
+Pierre Garcon
+35 299 160 2214 1
+WR
+Austin Collie
+36 226 149 1599 1
+TE
+Dallas Clark
+31 234 165 1740 1
+TE
+Jacob Tamme
+43 123 81 768 0
+K
+Adam Vinatieri
+0 15 15 14 17 15 17 2 4
+212 341 2017 10 23 303 1200 5 26 586 26 114 69 2843
+Jacksonville Jaguars
+QB
+Blaine Gabbert
+10 128 264 1371 6 28 1
+RB
+Maurice Jones-Drew
+41 841 3755 150 110 897 4
+RB
+Deji Karim
+22 96 284 26 17 130 0
+WR
+Mike Thomas
+41 239 151 1641 0
+WR
+Chastin West
+7 10 6 69 0
+WR
+Jarett Dillard
+16 30 20 258 0
+TE
+Marcedes Lewis
+41 208 117 1499 2
+TE
+Zach Miller
+33 60 45 470 0
+K
+Josh Scobee
+0 14 15 12 13 18 28 11 17
+205 350 2566 17 20 376 1564 4 38 812 30 366 69 3103
+Kansas City Chiefs
+QB
+Matt Cassel
+39 693 1212 7753 32 90 11
+RB
+Jamaal Charles
+33 432 2670 127 90 756 4
+RB
+Jackie Battle
+32 131 527 13 87 9 41 0
+WR
+Dwayne Bowe
+38 318 174 2570 0
+WR
+Steven Breaston
+39 238 145 2030 0
+WR
+Jon Baldwin
+6 31 13 165 0
+TE
+Leonard Pope
+40 80 50 400 1
+TE
+Jake O'Connell
+27 26 12 90 0
+K
+Ryan Succop
+0 20 20 19 22 18 23 5 10
+255 434 2987 9 28 303 1118 2 30 747 35 368 56 2750
+Miami Dolphins
+QB
+Matt Moore
+21 302 500 3517 17 45 11
+RB
+Reggie Bush
+33 239 1107 151 116 780 2
+RB
+Daniel Thomas
+8 120 431 12 8 51 1
+WR
+Brandon Marshall
+40 404 246 2984 1
+WR
+Brian Hartline
+39 173 98 1480 1
+WR
+Davone Bess
+43 299 191 1992 2
+TE
+Anthony Fasano
+40 143 89 1217 2
+TE
+Jeron Mastrud
+11 2 1 8 0
+K
+Dan Carpenter
+0 24 25 18 20 26 35 6 12
+274 402 3026 6 35 331 1246 10 41 1134 30 251 59 2674
+Minnesota Vikings
+QB
+Christian Ponder
+6 92 169 1141 6 18 2
+RB
+Adrian Peterson
+41 783 3553 126 95 902 6
+RB
+Toby Gerhart
+26 122 484 39 28 247 1
+WR
+Percy Harvin
+40 270 182 2212 0
+WR
+Michael Jenkins
+37 218 129 1606 2
+WR
+Devin Aromashodu
+35 105 43 660 0
+TE
+Visanthe Shiancoe
+43 212 132 1436 0
+TE
+Kyle Rudolph
+10 26 17 177 0
+K
+Ryan Longwell
+0 21 21 19 22 14 17 4 5
+310 485 3720 17 27 292 1225 6 37 787 29 333 42 1940
+New England Patriots
+QB
+Tom Brady
+43 972 1478 11925 27 61 9
+RB
+BenJarvus Green-Ellis
+39 405 1707 29 20 170 0
+RB
+Danny Woodhead
+34 165 844 82 56 597 1
+WR
+Wes Welker
+40 399 291 3339 0
+WR
+Deion Branch
+40 244 151 1883 1
+WR
+Chad Ochocinco
+40 276 150 2079 2
+TE
+Rob Gronkowski
+27 143 102 1410 1
+TE
+Aaron Hernandez
+23 133 92 1043 1
+K
+Stephen Gostkowski
+0 17 18 22 25 13 19 3 5
+244 428 2791 6 22 256 1288 5 27 704 18 173 33 1577
+New Orleans Saints
+QB
+Drew Brees
+42 1134 1632 12697 44 64 18
+RB
+Mark Ingram
+9 106 420 12 11 46 1
+RB
+Pierre Thomas
+31 310 1465 110 103 801 2
+WR
+Marques Colston
+40 296 199 2764 3
+WR
+Lance Moore
+33 165 119 1356 1
+WR
+Robert Meachem
+43 171 117 1719 1
+TE
+Jimmy Graham
+26 137 98 1313 0
+TE
+David Thomas
+33 103 70 591 0
+K
+John Kasay
+0 23 23 20 21 20 27 6 12
+238 391 2763 14 31 302 1435 8 33 763 20 142 57 2642
+New York Giants
+QB
+Eli Manning
+43 909 1450 11381 49 66 19
+RB
+Ahmad Bradshaw
+38 550 2453 117 92 731 8
+RB
+Brandon Jacobs
+40 474 1978 61 39 358 3
+WR
+Hakeem Nicks
+37 284 176 2614 0
+WR
+Mario Manningham
+40 245 151 2170 1
+WR
+Victor Cruz
+11 75 55 957 1
+TE
+Jake Ballard
+11 43 30 490 0
+TE
+Bear Pascoe
+30 21 18 177 0
+K
+Lawrence Tynes
+0 30 32 14 19 10 12 3 6
+213 394 2455 14 24 345 1355 9 46 1233 32 267 65 2800
+New York Jets
+QB
+Mark Sanchez
+42 684 1244 8248 44 78 16
+RB
+Shonn Greene
+40 454 1957 43 36 227 5
+RB
+LaDainian Tomlinson
+38 488 1811 140 97 834 1
+WR
+Santonio Holmes
+39 298 168 2488 0
+WR
+Plaxico Burress
+11 67 34 479 0
+WR
+Jeremy Kerley
+9 19 17 184 0
+TE
+Dustin Keller
+43 251 140 1783 2
+TE
+Jeff Cumberland
+4 30 5 3 38 0
+K
+Nick Folk
+0 19 22 24 27 13 24 6 13
+238 455 2783 14 33 326 1697 7 28 673 28 246 63 3203
+Oakland Raiders
+QB
+Carson Palmer
+37 732 1188 8276 41 63 7
+RB
+Darren McFadden
+32 440 2128 119 87 906 6
+RB
+Michael Bush
+41 444 1912 63 55 572 1
+WR
+Darrius Heyward-Bey
+36 170 70 1009 0
+WR
+Denarius Moore
+10 49 24 410 0
+WR
+Jacoby Ford
+23 81 42 730 1
+TE
+Kevin Boss
+39 156 93 1335 1
+TE
+Brandon Myers
+37 39 28 206 0
+K
+Sebastian Janikowski
+0 17 17 23 24 25 31 15 21
+22 375 2751 11 33 313 1387 5 31 694 18 123 43 1818
+Philadelphia Eagles
+QB
+Michael Vick
+22 420 685 5297 17 49 8
+RB
+LeSean McCoy
+43 577 2851 205 160 1177 2
+RB
+Ronnie Brown
+37 366 1458 62 47 594 4
+WR
+DeSean Jackson
+40 295 152 2910 1
+WR
+Jeremy Maclin
+40 276 172 2349 2
+WR
+Jason Avant
+44 201 136 1727 1
+TE
+Brent Celek
+44 260 163 1960 0
+TE
+Clay Harbor
+21 28 18 197 0
+K
+Alex Henery
+0 13 13 11 13 10 10 2 4
+227 398 2122 8 27 288 1163 4 25 639 30 352 43 1992
+Pittsburgh Steelers
+QB
+Ben Roethlisberger
+38 822 1280 10598 27 114 14
+RB
+Rashard Mendenhall
+42 719 2955 88 61 515 6
+RB
+Isaac Redman
+27 119 514 25 23 127 0
+WR
+Mike Wallace
+43 251 154 2952 2
+WR
+Antonio Brown
+20 104 64 874 0
+WR
+Hines Ward
+42 275 185 2211 2
+TE
+Heath Miller
+41 219 157 1786 1
+TE
+David Johnson
+42 19 13 107 0
+K
+Shaun Suisham
+0 11 11 7 10 14 18 0 1
+184 294 2258 10 19 336 1451 4 31 738 38 233 36 1770
+San Diego Chargers
+QB
+Philip Rivers
+43 930 1446 12175 49 91 16
+RB
+Ryan Mathews
+22 310 1395 65 58 529 4
+RB
+Mike Tolbert
+41 294 1223 106 87 778 4
+WR
+Vincent Jackson
+31 206 126 2240 0
+WR
+Malcom Floyd
+34 179 91 1894 0
+WR
+Vincent Brown
+9 25 15 260 0
+TE
+Antonio Gates
+34 234 169 2402 0
+TE
+Randy McMichael
+43 119 77 769 0
+K
+Nate Kaeding
+0 23 23 11 12 15 18 4 8
+247 422 2653 15 25 238 831 11 26 738 31 354 53 2695
+San Francisco 49ers
+QB
+Alex Smith
+33 615 1012 6836 27 77 12
+RB
+Frank Gore
+36 635 2882 174 115 959 6
+RB
+Kendall Hunter
+11 69 298 9 7 106 0
+WR
+Michael Crabtree
+37 257 147 1875 1
+WR
+Josh Morgan
+37 180 111 1445 1
+WR
+Braylon Edwards
+35 198 102 1617 2
+TE
+Vernon Davis
+43 275 167 2363 1
+TE
+Delanie Walker
+41 100 69 762 2
+K
+David Akers
+0 33 33 26 30 23 31 8 12
+265 423 2834 16 22 340 1242 7 35 818 33 337 74 3533
+Seattle Seahawks
+QB
+Tarvaris Jackson
+22 243 403 2797 16 37 2
+RB
+Marshawn Lynch
+27 404 1591 86 42 309 4
+RB
+Leon Washington
+35 139 583 51 32 246 1
+WR
+Sidney Rice
+31 218 132 2076 1
+WR
+Doug Baldwin
+12 62 38 625 0
+WR
+Ben Obomanu
+41 101 64 858 0
+TE
+Zach Miller
+41 216 144 1678 0
+TE
+Anthony McCoy
+12 19 12 123 0
+K
+Steven Hauschka
+0 4 4 11 11 6 8 2 4
+204 346 2256 10 29 345 1749 5 34 759 21 258 73 3269
+St Louis Rams
+QB
+Sam Bradford
+25 533 918 5483 20 67 12
+RB
+Steven Jackson
+41 826 3470 174 123 856 3
+RB
+Cadillac Williams
+39 396 1497 124 87 659 1
+WR
+Brandon Lloyd
+26 242 127 2127 0
+WR
+Brandon Gibson
+33 219 117 1330 1
+WR
+Danario Alexander
+13 76 36 602 0
+TE
+Lance Kendricks
+10 41 19 240 1
+TE
+Michael Hoomanawanui
+16 35 20 229 0
+K
+Josh Brown
+0 21 22 22 25 15 23 9 12
+234 380 3026 11 19 359 1700 8 33 800 21 211 54 2422
+Tampa Bay Buccaneers
+QB
+Josh Freeman
+37 703 1175 8021 40 66 13
+RB
+LeGarrette Blount
+22 339 1651 21 16 142 3
+RB
+Earnest Graham
+32 71 371 72 56 402 1
+WR
+Mike Williams
+27 217 117 1537 4
+WR
+Arrelious Benn
+26 81 50 779 0
+WR
+Dezmon Briscoe
+13 31 25 342 0
+TE
+Kellen Winslow
+43 308 195 2142 0
+TE
+Luke Stocker
+9 12 8 74 0
+K
+Connor Barth
+0 13 13 20 22 22 29 6 9
+279 453 2802 10 22 343 1462 10 21 598 28 329 64 2734
+Tennessee Titans
+QB
+Matt Hasselbeck
+39 784 1303 8547 44 75 17
+RB
+Chris Johnson
+43 857 4069 181 133 1016 6
+RB
+Javon Ringer
+33 133 451 40 32 228 0
+WR
+Nate Washington
+43 262 138 1884 0
+WR
+Damian Williams
+26 86 43 568 0
+WR
+Kenny Britt
+31 174 101 1765 3
+TE
+Jared Cook
+41 114 66 859 1
+TE
+Craig Stevens
+25 31 15 131 0
+K
+Rob Bironas
+0 17 17 19 23 25 28 10 13
+227 375 2505 8 33 343 1398 7 43 962 31 317 54 2402
+Washington Redskins
+QB
+Rex Grossman
+13 241 412 2870 19 25 7
+RB
+Tim Hightower
+37 380 1655 132 94 642 8
+RB
+Roy Helu
+11 74 356 44 38 267 0
+WR
+Santana Moss
+39 318 192 2347 3
+WR
+Jabar Gaffney
+43 276 165 2272 1
+WR
+Anthony Armstrong
+24 108 50 968 1
+TE
+Fred Davis
+43 180 122 1522 1
+TE
+Chris Cooley
+28 185 114 1246 1
+K
+Graham Gano
+0 16 19 8 14 17 23 3 8

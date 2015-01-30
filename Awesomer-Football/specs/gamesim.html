@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--
+   This document was automatically created using an XSLT stylesheet by Aubrey Barnard.
+   See www.stolaf.edu/people/barnard/xml/xml.html for additional information.
+   -->
+<html xmlns="http://www.w3.org/TR/xhtml1/strict">
+<head>
+<title>The Gamesim Class Specification</title>
+</head>
+<body bgcolor="white">
+<div class="specification">
+<center>
+<p>
+<big>
+<big>
+<big>
+<big>The Gamesim Class Specification</big>
+</big>
+</big>
+</big>
+</p>
+</center>
+<center>
+<p>
+<big>
+<big>
+<big>This class controls the simulation of an NFL game</big>
+</big>
+</big>
+</p>
+</center>
+<center>
+<p>Ryan Abdella. XML version of specification written by Ryan Abdella, Wednesday, November 30, 2011</p>
+</center>
+<br/>
+<hr/>
+<br/>
+<br/>
+
+<dl class="class-spec">
+<p>
+<dt>
+<big>
+<strong>CLASS <code> gamesim</code>
+</strong>
+</big>
+</dt>
+<dd>
+
+<dl class="inheritance">
+<p>
+<dt>
+<strong>No superclass.</strong>
+</dt>
+<dd/>
+</p>
+</dl>
+
+<dl class="variables">
+<p>
+<dt>
+<strong>State variables:</strong>
+</dt>
+<dd>
+<dl>
+<p>
+<dt class="var">
+<code>  float gametime</code>
+</dt>
+<dd>The time left in the current quarter.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  team * poss</code>
+</dt>
+<dd>Points to the team that is on offense.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  team * notposs</code>
+</dt>
+<dd>Points to the team that is on defense.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  team * initposs</code>
+</dt>
+<dd>Points to the team that received to start the game.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  int togo</code>
+</dt>
+<dd>Yardage until goalline.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  int down</code>
+</dt>
+<dd>The current down.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  int tofirst</code>
+</dt>
+<dd>Yardage until a first down.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  int qtr</code>
+</dt>
+<dd>The current quarter.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  int position</code>
+</dt>
+<dd>The postion on the field from 0 to 100.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  string event1</code>
+</dt>
+<dd>Most recent play.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  string event2</code>
+</dt>
+<dd>Second most recent play.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  string event3</code>
+</dt>
+<dd>Third most recent play.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  string event4</code>
+</dt>
+<dd>Fourth most recent play.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  string event5</code>
+</dt>
+<dd>Fifth most recent play.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  string event</code>
+</dt>
+<dd>Temp string for constructing output.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  team home</code>
+</dt>
+<dd>The home team.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  away away</code>
+</dt>
+<dd>The away team.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  ptype playtype</code>
+</dt>
+<dd>The current play type.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  int yardage</code>
+</dt>
+<dd>The length of the current play.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  bool fumble</code>
+</dt>
+<dd>Used to determine if a fumble occured.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  bool interception</code>
+</dt>
+<dd>Used to determine if an interception occured.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  bool sack</code>
+</dt>
+<dd>Used to determine if a sack occured.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  bool complete</code>
+</dt>
+<dd>Used to determine if a pass was complete.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  bool fg</code>
+</dt>
+<dd>Used to determine if a field goal was good.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  bool touchback</code>
+</dt>
+<dd>Used to determine if a punt of kickoff was a touchback.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  bool xp</code>
+</dt>
+<dd>Used to determine if an extra point was good.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  bool td</code>
+</dt>
+<dd>Used to determine if a touchdown occurred.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  int returnlength</code>
+</dt>
+<dd>The length of the punt return.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  int puntlength</code>
+</dt>
+<dd>The length of the punt.</dd>
+</p>
+</dl>
+</dd>
+</p>
+</dl>
+
+<dl class="constructors-list">
+<p>
+<dt>
+<strong>Constructors:</strong>
+</dt>
+<dd>
+<dl>
+
+<p>
+<dt class="constructor">
+<code> gamesim</code>
+</dt>
+<dd>
+<dl>
+Default Constructor.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>This instance of gamesim is initialized by assigning everything the regular constructor does except for the teams.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="constructor">
+<code> gamesim</code>
+</dt>
+<dd>
+<dl>
+Regular Constructor.
+<p>
+<dt class="arguments">Arguments:</dt>
+<dd>
+<dl>
+<p>
+<dt class="arg">
+<code>team t1</code>
+</dt>
+<dd>The home team.</dd>
+</p>
+<p>
+<dt class="arg">
+<code>team t2</code>
+</dt>
+<dd>The away team.</dd>
+</p>
+</dl>
+</dd>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>This instance of gamesim sets all bools to false, all strings to "", the playtype to kickoff, yardage to 0, gametime to 900, qtr to 1, down to 1, tofirst to 10 and togo to 100.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+</dl>
+</dd>
+</p>
+</dl>
+
+<dl class="destructor">
+<p>
+<dt>
+<strong>Destructor:</strong>
+</dt>
+<dd>
+<dl>
+<dt class="destructor">
+<code> 
+      ~gamesim</code>
+</dt>
+<dd>
+<dl>
+
+<p>
+<dt>State change:</dt>
+<dd/>
+</p>
+</dl>
+</dd>
+</dl>
+</dd>
+</p>
+</dl>
+
+<dl class="methods-list">
+<p>
+<dt>
+<strong>Methods:</strong>
+</dt>
+<dd>
+<dl>
+
+<p>
+<dt class="method">
+<code> void simdown</code>
+</dt>
+<dd>
+<dl>
+This method will simulate one play.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>Updates the state variables to reflect the outcome of the play.</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>None.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> void gameTime</code>
+</dt>
+<dd>
+<dl>
+This method will determine the amount of time a play took.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>Subtracts the time for the given play from the time left in the quarter.  If a quarter ends, changes the necessary state variables for the next quarter.</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>None.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> void updateYardage</code>
+</dt>
+<dd>
+<dl>
+This method updates the various state variables that have to do with field position.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>State variables that have to do with field position are updated after a play is run.</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>None.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> ptype cpuPlayType</code>
+</dt>
+<dd>
+<dl>
+Determines what type of play the cpu would run in a given situation.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>None.</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>New playtype.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> void changePoss</code>
+</dt>
+<dd>
+<dl>
+Changes the pointers poss and notposs to the other team.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>Teams that poss and notposs point to are switched.</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>None.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> void kickoff</code>
+</dt>
+<dd>
+<dl>
+Simulates a kickoff.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>Changes yardage to reflect the result of the kickoff.</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>None.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> void runPlay</code>
+</dt>
+<dd>
+<dl>
+Simulates a rushing play.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>Changes yardage and fumble to reflect the result of the play.</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>None.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> void passPlay</code>
+</dt>
+<dd>
+<dl>
+Simulates a passing play.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>Changes yardage, fumble, sack, and interception to reflect the result of the play.</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>None.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> void punt</code>
+</dt>
+<dd>
+<dl>
+Simulates a punt play.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>Changes yardage, puntlength, and returnlength to reflect the result of the play.</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>None.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> void fieldgoal</code>
+</dt>
+<dd>
+<dl>
+Simulates a field goal.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>Changes yardage and fg to reflect hte result of the play.</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>None.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> void extrapoint</code>
+</dt>
+<dd>
+<dl>
+Simulates an extra point.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>Changes xp and the team with possessions score to reflect the result of the play.</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>None.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> void setTeams</code>
+</dt>
+<dd>
+<dl>
+Sets the pointers to the teams used for the simulation.
+<p>
+<dt class="arguments">Arguments:</dt>
+<dd>
+<dl>
+<p>
+<dt class="arg">
+<code>team * t1</code>
+</dt>
+<dd>A pointer to a team.</dd>
+</p>
+<p>
+<dt class="arg">
+<code>team * t2</code>
+</dt>
+<dd>A pointer to a team.</dd>
+</p>
+</dl>
+</dd>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>Changes where the pointers home and away point to.</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>None.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> void updateOutput</code>
+</dt>
+<dd>
+<dl>
+Updates the strings that detail the previous plays.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>Changes the event strings.</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>None.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> float getcomppercent</code>
+</dt>
+<dd>
+<dl>
+Averages the quarterback, receiver, and defense to get a real completion percent.
+<p>
+<dt class="arguments">Arguments:</dt>
+<dd>
+<dl>
+<p>
+<dt class="arg">
+<code>player * p</code>
+</dt>
+<dd>A pointer to the receiver.</dd>
+</p>
+</dl>
+</dd>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>None.</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>A decimal representing a completion percentage.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> float getypcatch</code>
+</dt>
+<dd>
+<dl>
+Average the quarterback, receiver, and defense to get an accurate yards per catch.
+<p>
+<dt class="arguments">Arguments:</dt>
+<dd>
+<dl>
+<p>
+<dt class="arg">
+<code>player * p</code>
+</dt>
+<dd>A pointer to the receiver.</dd>
+</p>
+</dl>
+</dd>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>None.</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>A number representing an average yards per catch.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> float getinterrate</code>
+</dt>
+<dd>
+<dl>
+Averages the quarterback and defense to get a real interception rate.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>None.</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>A decimal representing an interception rate.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> float getsackrate</code>
+</dt>
+<dd>
+<dl>
+Averages the quarterback and defense to get a real sack rate.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>None.</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>A decimal representing a sack rate.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> float getypr</code>
+</dt>
+<dd>
+<dl>
+Averages the runningback and defense to get an accurate yards per rush.
+<p>
+<dt class="arguments">Arguments:</dt>
+<dd>
+<dl>
+<p>
+<dt class="arg">
+<code>player * p</code>
+</dt>
+<dd>A pointer to the runningback.</dd>
+</p>
+</dl>
+</dd>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>None.</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>A number representing an average yards per rush.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> float getfumbrate</code>
+</dt>
+<dd>
+<dl>
+Averages the player and defense to get a real fumble rate.
+<p>
+<dt class="arguments">Arguments:</dt>
+<dd>
+<dl>
+<p>
+<dt class="arg">
+<code>player * p</code>
+</dt>
+<dd>A pointer to the player.</dd>
+</p>
+</dl>
+</dd>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>None.</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>A decimal representing a fumble rate.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> void start</code>
+</dt>
+<dd>
+<dl>
+Starts a game simulation.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>Changes the state variables associated with yardage and possession to values used in the beginning of the game.</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>None.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+</dl>
+</dd>
+</p>
+</dl>
+
+</dd>
+<dt>
+<hr/>
+</dt>
+<dd/>
+</p>
+</dl>
+
+</div>
+</body>
+</html>

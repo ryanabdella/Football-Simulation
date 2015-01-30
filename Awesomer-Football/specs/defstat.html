@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--
+   This document was automatically created using an XSLT stylesheet by Aubrey Barnard.
+   See www.stolaf.edu/people/barnard/xml/xml.html for additional information.
+   -->
+<html xmlns="http://www.w3.org/TR/xhtml1/strict">
+<head>
+<title>defstat class specification</title>
+</head>
+<body bgcolor="white">
+<div class="specification">
+<center>
+<p>
+<big>
+<big>
+<big>
+<big>defstat class specification</big>
+</big>
+</big>
+</big>
+</p>
+</center>
+<center>
+<p>
+<big>
+<big>
+<big>This class models the defensive stats of a football team.</big>
+</big>
+</big>
+</p>
+</center>
+<center>
+<p>XML version of specification written by Soren Knutson, Sunday, December 11, 2011</p>
+</center>
+<br/>
+<hr/>
+<br/>
+<br/>
+
+<dl class="class-spec">
+<p>
+<dt>
+<big>
+<strong>CLASS <code> defstat</code>
+</strong>
+</big>
+</dt>
+<dd>
+
+<dl class="inheritance">
+<p>
+<dt>
+<strong>No superclass.</strong>
+</dt>
+<dd/>
+</p>
+</dl>
+
+<dl class="variables">
+<p>
+<dt>
+<strong>State variables:</strong>
+</dt>
+<dd>
+<dl>
+<p>
+<dt class="var">
+<code>  float comp</code>
+</dt>
+<dd>The number of completions the defence give up.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float att</code>
+</dt>
+<dd>The number of passing attempts the player has against them.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float pyds</code>
+</dt>
+<dd>The number of passing yards the defence has given up.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float inter</code>
+</dt>
+<dd>The number of time the defence has intercepted the ball.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float sack</code>
+</dt>
+<dd>The number of times the defence has sack a QB</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float rush</code>
+</dt>
+<dd>The number of rushing attempts made against the defence.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float ruyds</code>
+</dt>
+<dd>The number of rushing yards the defence has given up.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float fumb</code>
+</dt>
+<dd>The number of times the defence has caused a fumble.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float kickret</code>
+</dt>
+<dd>The number of kick returns the defence has.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float kickretyds</code>
+</dt>
+<dd>The number of return yards against the defence.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float puntret</code>
+</dt>
+<dd>The number of punt returns the defence have.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float puntretyds</code>
+</dt>
+<dd>The number of punt return yards the defence has for them.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float punt</code>
+</dt>
+<dd>The number of punts the defence has kicked.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float puntyds</code>
+</dt>
+<dd>The number of punting yards the defence has.</dd>
+</p>
+
+</dl>
+</dd>
+</p>
+</dl>
+
+<dl class="constructors-list">
+<p>
+<dt>
+<strong>Constructors:</strong>
+</dt>
+<dd>
+<dl>
+
+<p>
+<dt class="constructor">
+<code> defstat</code>
+</dt>
+<dd>
+<dl>
+Default constructor
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>Does nothing.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="constructor">
+<code> defstat</code>
+</dt>
+<dd>
+<dl>
+An ifstream constructor
+<p>
+<dt class="arguments">Arguments:</dt>
+<dd>
+<dl>
+<p>
+<dt class="arg">
+<code>ifstream is</code>
+</dt>
+<dd>A reference to an ifstream.</dd>
+</p>
+</dl>
+</dd>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>All the defensive stats are read in and set to their appropriate variables. Can be done by initializing a stringstream and a string inside the constructor.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+</dl>
+</dd>
+</p>
+</dl>
+
+<dl class="destructor">
+<p>
+<dt>
+<strong>Destructor:</strong>
+</dt>
+<dd>
+<dl>
+<dt class="destructor">
+<code> 
+      ~defstat</code>
+</dt>
+<dd>
+<dl>
+
+<p>
+<dt>State change:</dt>
+<dd/>
+</p>
+</dl>
+</dd>
+</dl>
+</dd>
+</p>
+</dl>
+
+<dl class="methods-list">
+<p>
+<dt>
+<strong>Methods:</strong>
+</dt>
+<dd>
+<dl>
+
+<p>
+<dt class="method">
+<code> float commpercent</code>
+</dt>
+<dd>
+<dl>
+Returns the number of completions over the number of attempts.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>none</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>Returns the number of completions over the number of attempts.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> float ypcomp</code>
+</dt>
+<dd>
+<dl>
+Yards per completion
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>none</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>Returns the number of receiving yards over the number of completions.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> float interrate</code>
+</dt>
+<dd>
+<dl>
+Interception rate
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>none</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>Returns the then number of interceptions over the number of attempts</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> float sackrate</code>
+</dt>
+<dd>
+<dl>
+The percentage of time the QB is sacked
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>none</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>Returns the number of sacks over the number of attempts</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> float ypr</code>
+</dt>
+<dd>
+<dl>
+Yards per rush
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>none</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>Returns the number of rushing yards over the number of rush attempts</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> float fumbrate</code>
+</dt>
+<dd>
+<dl>
+The rate at which a player fumbles the ball to the other team.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>none</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>Returns the number of fumbles the defence has caused over the summation of the completions the defence has allowed, the number of rush attempts, and the number of sacks.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+
+<p>
+<dt class="method">
+<code> float ypkret</code>
+</dt>
+<dd>
+<dl>
+Yard per kick return.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>None.</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>Returns the number of kick return yards over the number of kick returns.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> float yppret</code>
+</dt>
+<dd>
+<dl>
+Yards per punt return.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>None.</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>Returns the number of punt return yards over the number of punt returns.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> float ypp</code>
+</dt>
+<dd>
+<dl>
+Yards per punt.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>None.</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>Returns the number of punting yards over the number of punts.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+
+
+</dl>
+</dd>
+</p>
+</dl>
+
+</dd>
+<dt>
+<hr/>
+</dt>
+<dd/>
+</p>
+</dl>
+
+</div>
+</body>
+</html>

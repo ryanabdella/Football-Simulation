@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--
+   This document was automatically created using an XSLT stylesheet by Aubrey Barnard.
+   See www.stolaf.edu/people/barnard/xml/xml.html for additional information.
+   -->
+<html xmlns="http://www.w3.org/TR/xhtml1/strict">
+<head>
+<title>The Player Specification</title>
+</head>
+<body bgcolor="white">
+<div class="specification">
+  <center>
+<p>
+<big>
+<big>
+<big>
+<big>The Player Specification</big>
+</big>
+</big>
+</big>
+</p>
+</center>
+<center>
+<p>
+<big>
+<big>
+<big>This class models a player, a professional football player</big>
+</big>
+</big>
+</p>
+</center>
+<center>
+<p>XML version of specification written by Soren Knutson, Sunday, December 11, 2011</p>
+</center>
+<br/>
+<hr/>
+<br/>
+<br/>
+
+<dl class="class-spec">
+<p>
+<dt>
+<big>
+<strong>CLASS <code> Player</code>
+</strong>
+</big>
+</dt>
+<dd>
+
+<dl class="inheritance">
+<p>
+<dt>
+<strong>No superclass.</strong>
+</dt>
+<dd/>
+</p>
+</dl>
+
+<dl class="variables">
+<p>
+<dt>
+<strong>State variables:</strong>
+</dt>
+<dd>
+<dl>
+<p>
+<dt class="var">
+<code>  string name</code>
+</dt>
+<dd>The name of the player.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  string position</code>
+</dt>
+<dd>What position the player plays as.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  string output</code>
+</dt>
+<dd>A string of stats that will be displayed when the player's team is highlighted.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float games</code>
+</dt>
+<dd>The number of games the player has played.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float comp</code>
+</dt>
+<dd>The number of completions the player has made.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float att</code>
+</dt>
+<dd>The number of passing attempts the player has made.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float pyds</code>
+</dt>
+<dd>The number of passing yards the player has.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float inter</code>
+</dt>
+<dd>The number of interceptions the player has thrown.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float sack</code>
+</dt>
+<dd>The number of times the play has been sacked</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float rush</code>
+</dt>
+<dd>The number of rushing attempts a player has made.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float ruyds</code>
+</dt>
+<dd>The number of yards a player has rushed.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float tar</code>
+</dt>
+<dd>The number of times the player has been passed to.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float cat</code>
+</dt>
+<dd>The number of catches the player has made.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float reyds</code>
+</dt>
+<dd>The number of receiving yards the player has.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float fumb</code>
+</dt>
+<dd>The number of times the player has fumbled the ball.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float fg20a</code>
+</dt>
+<dd>The number of field goal attempts at 20-30 yrds </dd>
+</p>
+<p>
+<dt class="var">
+<code>  float fg20m</code>
+</dt>
+<dd>The number of field goals made from 20-30 yards.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float fg30a</code>
+</dt>
+<dd>The number of field goal attempts at 30-40 yards.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float fg30m</code>
+</dt>
+<dd>The number of field goals made from 30-40 yards.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float fg40a</code>
+</dt>
+<dd>The number of field goal attempts at 40-50 yards.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float fg40m</code>
+</dt>
+<dd>The number of field goals made from 40-50 yards.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float fg50a</code>
+</dt>
+<dd>The number of field goal attempts at 50 yards and up.</dd>
+</p>
+<p>
+<dt class="var">
+<code>  float fg50m</code>
+</dt>
+<dd>The number of field goals made from 50 yards and up. </dd>
+</p>
+</dl>
+</dd>
+</p>
+</dl>
+
+<dl class="constructors-list">
+<p>
+<dt>
+<strong>Constructors:</strong>
+</dt>
+<dd>
+<dl>
+
+<p>
+<dt class="constructor">
+<code> Player</code>
+</dt>
+<dd>
+<dl>
+Player default constructor
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd> Sets all stats of the player to zero.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="constructor">
+<code> Player</code>
+</dt>
+<dd>
+<dl>
+A ifstream constructor
+<p>
+<dt class="arguments">Arguments:</dt>
+<dd>
+<dl>
+<p>
+<dt class="arg">
+<code>ifstream is</code>
+</dt>
+<dd>A reference to an ifstream</dd>
+</p>
+</dl>
+</dd>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>Initializes all the variables to their appropriate values. Also determines the players position and creates the appropriate string of stats for the output variable. This can be done by using two stringstreams and a string.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+</dl>
+</dd>
+</p>
+</dl>
+
+<dl class="destructor">
+<p>
+<dt>
+<strong>Destructor:</strong>
+</dt>
+<dd>
+<dl>
+<dt class="destructor">
+<code> 
+      ~Player</code>
+</dt>
+<dd>
+<dl>
+No destructor needed
+<p>
+<dt>State change:</dt>
+<dd>none</dd>
+</p>
+</dl>
+</dd>
+</dl>
+</dd>
+</p>
+</dl>
+
+<dl class="methods-list">
+<p>
+<dt>
+<strong>Methods:</strong>
+</dt>
+<dd>
+<dl>
+
+<p>
+<dt class="method">
+<code> float commpercent</code>
+</dt>
+<dd>
+<dl>
+Returns the number of completions over the number of attempts.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>none</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>Returns the number of completions over the number of attempts.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> float ypcomp</code>
+</dt>
+<dd>
+<dl>
+Yards per completion
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>none</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>Returns the number of receiving yards over the number of completions.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> float interrate</code>
+</dt>
+<dd>
+<dl>
+Interception rate
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>none</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>Returns the then number of interceptions over the number of attempts</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> float sackrate</code>
+</dt>
+<dd>
+<dl>
+The percentage of time the QB is sacked
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>none</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>Returns the number of sacks over the number of attempts</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> float ypr</code>
+</dt>
+<dd>
+<dl>
+Yards per rush
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>none</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>Returns the number of rushing yards over the number of rush attempts</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> float tpg</code>
+</dt>
+<dd>
+<dl>
+Targets per game
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>none</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>Returns the number of times the ball was thrown to a player over the number of games the player has played.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> float catchrate</code>
+</dt>
+<dd>
+<dl>
+The catching percentage of a player.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>none</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>Returns the number of catches the player has made over the number of times the ball has be thrown to that player.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> float ypcat</code>
+</dt>
+<dd>
+<dl>
+Yards per catch
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>none</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>Returns the number of receiving yards divided by the number of catches the player has made.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> float fumbrate</code>
+</dt>
+<dd>
+<dl>
+The rate at which a player fumbles the ball to the other team.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>none</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>Returns the number of fumbles a player has made over the summation of the completions of a QB, the number of rush attempts, and the number of sacks.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> float fg20</code>
+</dt>
+<dd>
+<dl>
+The percentage of success a player has to make a kick at 20-30 yards.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>none</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>Returns the number of attempts at 20-30 yards over the number of times the player has made a kick at 20-30 yards.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> float fg30</code>
+</dt>
+<dd>
+<dl>
+The percentage of success a player has to make a kick at 30-40 yards.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>none</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>Returns the number of attempts at 30-40 yards over the number of times the player has made a kick at 30-40 yards.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+<p>
+<dt class="method">
+<code> float fg40</code>
+</dt>
+<dd>
+<dl>
+The percentage of success a player has to make a kick at 40-50 yards.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>none</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>Returns the number of attempts at 40-50 yards over the number of times the player has made a kick at 40-50 yards.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+
+<p>
+<dt class="method">
+<code> float fg50</code>
+</dt>
+<dd>
+<dl>
+The percentage of success a player has to make a kick at 50 yards and up.
+<p>
+<dt class="arguments">No arguments.</dt>
+<dd/>
+</p>
+<p>
+<dt>State change:</dt>
+<dd>none</dd>
+</p>
+<p>
+<dt>Return value:</dt>
+<dd>Returns the number of attempts at 50 yards an up over the number of times the player has made a kick at 50 yards and up.</dd>
+</p>
+</dl>
+</dd>
+</p>
+
+
+</dl>
+</dd>
+</p>
+</dl>
+
+</dd>
+<dt>
+<hr/>
+</dt>
+<dd/>
+</p>
+</dl>
+
+</div>
+</body>
+</html>

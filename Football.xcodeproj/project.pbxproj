@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		003954C514BDD32A0060E94C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 003954C414BDD32A0060E94C /* main.cpp */; };
-		003954C714BDD32A0060E94C /* Football.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 003954C614BDD32A0060E94C /* Football.1 */; };
+		0074C2E714CC72AD00CFD96B /* football.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0074C2DF14CC72AD00CFD96B /* football.cpp */; };
+		0074C2E814CC72AD00CFD96B /* gamesim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0074C2E014CC72AD00CFD96B /* gamesim.cpp */; };
+		0074C2E914CC72AD00CFD96B /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0074C2E414CC72AD00CFD96B /* texture.cpp */; };
+		1CD1D89217CC46580091C73E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD1D89117CC46580091C73E /* OpenGL.framework */; };
+		1CD1D89417CC468C0091C73E /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD1D89317CC468C0091C73E /* GLUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +21,6 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				003954C714BDD32A0060E94C /* Football.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -26,8 +28,20 @@
 
 /* Begin PBXFileReference section */
 		003954C014BDD32A0060E94C /* Football */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Football; sourceTree = BUILT_PRODUCTS_DIR; };
-		003954C414BDD32A0060E94C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		003954C614BDD32A0060E94C /* Football.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Football.1; sourceTree = "<group>"; };
+		0074C2DA14CC72AD00CFD96B /* accum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = accum.h; path = "Awesomer-Football/accum.h"; sourceTree = "<group>"; };
+		0074C2DC14CC72AD00CFD96B /* button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = button.h; path = "Awesomer-Football/button.h"; sourceTree = "<group>"; };
+		0074C2DD14CC72AD00CFD96B /* ColorPoint2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorPoint2.h; path = "Awesomer-Football/ColorPoint2.h"; sourceTree = "<group>"; };
+		0074C2DE14CC72AD00CFD96B /* defstat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = defstat.h; path = "Awesomer-Football/defstat.h"; sourceTree = "<group>"; };
+		0074C2DF14CC72AD00CFD96B /* football.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = football.cpp; path = "Awesomer-Football/football.cpp"; sourceTree = "<group>"; };
+		0074C2E014CC72AD00CFD96B /* gamesim.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gamesim.cpp; path = "Awesomer-Football/gamesim.cpp"; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
+		0074C2E114CC72AD00CFD96B /* gamesim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gamesim.h; path = "Awesomer-Football/gamesim.h"; sourceTree = "<group>"; };
+		0074C2E214CC72AD00CFD96B /* player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = player.h; path = "Awesomer-Football/player.h"; sourceTree = "<group>"; };
+		0074C2E314CC72AD00CFD96B /* team.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = team.h; path = "Awesomer-Football/team.h"; sourceTree = "<group>"; };
+		0074C2E414CC72AD00CFD96B /* texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = texture.cpp; path = "Awesomer-Football/texture.cpp"; sourceTree = "<group>"; };
+		0074C2E514CC72AD00CFD96B /* texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = texture.h; path = "Awesomer-Football/texture.h"; sourceTree = "<group>"; };
+		1C1C5A7019395B4B0034F6A2 /* football.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = football.h; path = "Awesomer-Football/football.h"; sourceTree = "<group>"; };
+		1CD1D89117CC46580091C73E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		1CD1D89317CC468C0091C73E /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CD1D89417CC468C0091C73E /* GLUT.framework in Frameworks */,
+				1CD1D89217CC46580091C73E /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,7 +60,20 @@
 		003954B514BDD32A0060E94C = {
 			isa = PBXGroup;
 			children = (
-				003954C314BDD32A0060E94C /* Football */,
+				1CD1D89317CC468C0091C73E /* GLUT.framework */,
+				1CD1D89117CC46580091C73E /* OpenGL.framework */,
+				0074C2DA14CC72AD00CFD96B /* accum.h */,
+				0074C2DC14CC72AD00CFD96B /* button.h */,
+				0074C2DE14CC72AD00CFD96B /* defstat.h */,
+				0074C2E214CC72AD00CFD96B /* player.h */,
+				0074C2E314CC72AD00CFD96B /* team.h */,
+				0074C2E514CC72AD00CFD96B /* texture.h */,
+				0074C2E114CC72AD00CFD96B /* gamesim.h */,
+				1C1C5A7019395B4B0034F6A2 /* football.h */,
+				0074C2DD14CC72AD00CFD96B /* ColorPoint2.h */,
+				0074C2DF14CC72AD00CFD96B /* football.cpp */,
+				0074C2E014CC72AD00CFD96B /* gamesim.cpp */,
+				0074C2E414CC72AD00CFD96B /* texture.cpp */,
 				003954C114BDD32A0060E94C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,15 +84,6 @@
 				003954C014BDD32A0060E94C /* Football */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		003954C314BDD32A0060E94C /* Football */ = {
-			isa = PBXGroup;
-			children = (
-				003954C414BDD32A0060E94C /* main.cpp */,
-				003954C614BDD32A0060E94C /* Football.1 */,
-			);
-			path = Football;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,7 +112,7 @@
 		003954B714BDD32A0060E94C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0610;
 			};
 			buildConfigurationList = 003954BA14BDD32A0060E94C /* Build configuration list for PBXProject "Football" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -116,7 +136,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				003954C514BDD32A0060E94C /* main.cpp in Sources */,
+				0074C2E714CC72AD00CFD96B /* football.cpp in Sources */,
+				0074C2E814CC72AD00CFD96B /* gamesim.cpp in Sources */,
+				0074C2E914CC72AD00CFD96B /* texture.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,9 +149,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -143,7 +172,11 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/boost_1_57_0/;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -154,17 +187,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/boost_1_57_0/;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
 			};
@@ -203,6 +247,7 @@
 				003954CC14BDD32A0060E94C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
